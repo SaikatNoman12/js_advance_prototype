@@ -26,10 +26,6 @@ function Person(name, age) {
 // set Person function in firstPlayer;
 const firstPlayer = Person('Abdullah', 30);
 
-// this two console use for output smoothly;
-console.log('');
-console.log('------------ Player One ------------');
-
 // check firstPlayer object is work or not;
 console.log(firstPlayer.name); // return output '30';
 console.log(firstPlayer.eat()); // return output 'Person eating';
@@ -64,10 +60,6 @@ PersonTwo.prototype = {
 
 // set PersonTwo function in secondPlayer;
 const secondPlayer = PersonTwo('Abu Hasnat', 40);
-
-// this two console use for output smoothly;
-console.log('');
-console.log('------------ Player Second ------------');
 
 // check secondPlayer object is work or not;
 console.log(secondPlayer.name);  // return output 'Abu Hasnat';
@@ -106,10 +98,6 @@ ConstructorFunction.prototype.school = 'Sahin Academy School and Collage';
 // constructor function call in new keyword;
 const playerThree = new ConstructorFunction('Abu Mahin', '30', 'Bangla');
 
-// this two console use for output smoothly;
-console.log('');
-console.log('------------ Player Three ------------');
-
 // check our constructorFunction is work or not; 
 console.log(playerThree.school);  // return out 'Sahin Academy School and Collage' 
 console.log(playerThree.sleep()); // return output 'hello sir.';
@@ -146,10 +134,6 @@ ConstructorFunctionTwo.prototype.collage = 'Feni Computer Institute';
 // constructor function call in new keyword. PersonFive constructor function object data store in playerFive object;;
 const playerFour = new ConstructorFunctionTwo('Abu Mahin', '30', 'Bangla');
 
-// this two console use for output smoothly;
-console.log('');
-console.log('------------ Player Four ------------');
-
 // check our playerFour object is work or not; 
 console.log(playerFour.collage); // return output 'hello sir.';
 console.log(playerFour.play()); // return output 'Sir is playing.';
@@ -177,10 +161,6 @@ class PersonFive {
 
 // constructor function call in new keyword. PersonFive constructor function object data store in playerFive object; 
 const playerFive = new PersonFive('Mehedi Hasan', 30, 'English');
-
-// this two console use for output smoothly;
-console.log('');
-console.log('------------ Player Five ------------');
 
 // check our playerFive object is work or not;
 console.log(playerFive.name);

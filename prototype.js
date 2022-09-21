@@ -31,7 +31,6 @@ console.log(firstPlayer.name); // return output '30';
 console.log(firstPlayer.eat()); // return output 'Person eating';
 
 
-
 /*== 
 2. Second old prototype constructor function;
 ==*/
@@ -66,9 +65,7 @@ console.log(secondPlayer.name);  // return output 'Abu Hasnat';
 console.log(secondPlayer.play());  // return output 'Person playing.' ;
 
 
-
 /* ========= Note: This 1st and 2nd do not use in constructor function prototype ========= */
-
 
 
 /*==
@@ -80,8 +77,10 @@ const ConstructorFunction = function (name, age, language) {
     this.language = language;
 }
 
-
 /* === Note: When we use single methods as prototypes, we cannot use a multiple prototypes method. === */
+
+// Add new property values; 
+ConstructorFunction.prototype.school = 'Sahin Academy School and Collage';
 
 // add separate method in constructor function; 
 ConstructorFunction.prototype.eat = function () {
@@ -91,17 +90,12 @@ ConstructorFunction.prototype.sleep = function () {
     return 'hello sleep.';
 }
 
-// Add new property values; 
-ConstructorFunction.prototype.school = 'Sahin Academy School and Collage';
-
-
 // constructor function call in new keyword;
 const playerThree = new ConstructorFunction('Abu Mahin', '30', 'Bangla');
 
 // check our constructorFunction is work or not; 
 console.log(playerThree.school);  // return out 'Sahin Academy School and Collage' 
 console.log(playerThree.sleep()); // return output 'hello sir.';
-
 
 
 /*==
@@ -114,6 +108,9 @@ const ConstructorFunctionTwo = function (name, age, language) {
 }
 
 /* === Note: When we use multiple methods as prototypes, we cannot use a single prototype method. === */
+
+// Add new property values; 
+ConstructorFunctionTwo.prototype.collage = 'Feni Computer Institute';
 
 // add multiple method in constructor function; 
 ConstructorFunctionTwo.prototype = {
@@ -128,16 +125,12 @@ ConstructorFunctionTwo.prototype = {
     }
 }
 
-// Add new property values; 
-ConstructorFunctionTwo.prototype.collage = 'Feni Computer Institute';
-
 // constructor function call in new keyword. PersonFive constructor function object data store in playerFive object;;
 const playerFour = new ConstructorFunctionTwo('Abu Mahin', '30', 'Bangla');
 
 // check our playerFour object is work or not; 
 console.log(playerFour.collage); // return output 'hello sir.';
 console.log(playerFour.play()); // return output 'Sir is playing.';
-
 
 
 /*==

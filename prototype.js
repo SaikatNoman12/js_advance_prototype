@@ -134,7 +134,7 @@ console.log(playerFour.play()); // return output 'Sir is playing.';
 
 
 /*==
-5. JavaScript Class;
+5. JavaScript Class. OOP concept;
 ==*/
 
 class PersonFive {
